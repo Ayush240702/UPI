@@ -1,12 +1,15 @@
 {
-    "name": "UPAYI",
     "version": 2,
-    "builds": [{
-        "src": "*.py",
-        "use": "@liudonghua123/now-flask"
-    }],
-    "routes": [{
-        "src": "(.*)",
-        "dest": "main.py"
-    }]
+    "builds": [
+        {
+            "src": "./index.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
 }
