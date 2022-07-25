@@ -10,7 +10,7 @@ import tempfile
 app = Flask(__name__, template_folder='views', static_folder='/tmp/')
 
 # Set the app secret key from the secret environment variables.
-app.secret = os.environ.get('SECRET')
+# app.secret = os.environ.get('SECRET')
 
 
 @app.route('/qr/<id>/<amount>')
